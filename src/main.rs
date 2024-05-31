@@ -22,10 +22,10 @@ fn main() {
     // Define a hashmap to map file extensions to their corresponding folder names.
     // `.iter().cloned().collect()` is used to create a HashMap from an array of tuples.
     let extensions = [
-        (".jpg", "Images"), (".jpeg", "Images"), (".png", "Images"),
-        (".gif", "Images"), (".mp4", "Videos"), (".mov", "Videos"),
-        (".avi", "Videos"), (".doc", "Documents"), (".pdf", "Documents"),
-        (".txt", "Documents"), (".mp3", "Music"), (".wav", "Music"),
+        ("jpg", "Images"), ("jpeg", "Images"), ("png", "Images"),
+        ("gif", "Images"), ("mp4", "Videos"), ("mov", "Videos"),
+        ("avi", "Videos"), ("doc", "Documents"), ("pdf", "Documents"),
+        ("txt", "Documents"), ("mp3", "Music"), ("wav", "Music"),
     ].iter().cloned().collect::<std::collections::HashMap<_, _>>();
 
     // Check if the specified directory is indeed a directory and not a file or a nonexistent path.
